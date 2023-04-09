@@ -1,27 +1,36 @@
 # 101224717Comp3133As2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Requirement
 
-## Development server
+In order to run the project, your computer needs to have these packages and environment installed and configured:
+- [NodeJS](https://choosealicense.com/licenses/mit/) (version 14.5.3 and up)
+- npm (version 6.14.9)
+- [git](https://git-scm.com/downloads)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How to set up the application
+First, you need to clone the project to your local machine
 
-## Code scaffolding
+```bash
+git clone https://github.com/minhnhat-auto/101224717_COMP3133_Assignment01.git
+``` 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the following commands to install all dependencies :
 
-## Build
+```bash
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run the command below command to start the project in development mode:
+```bash
+npm run dev
+```
 
-## Running unit tests
+Open http://localhost:4000/graphql your browser to see the result.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Basic workflow
+### Test
+For Login
 
-## Running end-to-end tests
+Username: "test123"
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Password: "12345678"
