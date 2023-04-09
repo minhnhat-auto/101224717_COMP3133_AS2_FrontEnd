@@ -8,13 +8,18 @@ In order to run the project, your computer needs to have these packages and envi
 - [git](https://git-scm.com/downloads)
 
 ## How to set up the application
-First, you need to clone the project to your local machine
+First, you need to clone the FrontEnd project to your local machine
 
 ```bash
 git clone https://github.com/minhnhat-auto/101224717_COMP3133_AS2_FrontEnd.git
 ``` 
+Secondly, you aslo need to clone the BackEnd project to your local machine
 
-Run the following commands to install all dependencies :
+```bash
+git clone https://github.com/minhnhat-auto/101224717_COMP3133_AS2_BackEnd.git
+``` 
+
+Run the following commands to install all dependencies for both FrontEnd and BackEnd:
 
 ```bash
 npm install
