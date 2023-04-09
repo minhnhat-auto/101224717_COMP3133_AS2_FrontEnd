@@ -1,0 +1,44 @@
+<mat-card>
+    <div class="header">
+        <h1>Add Employee</h1>
+    </div>
+    <div class="container">
+        <form [formGroup]="newEmployeeForm" (ngSubmit)="submitForm()">
+            <div class="content">
+                <label for="first_name">Employee First Name:</label>
+                <input type="text" name="first_name" formControlName="first_name" placeholder="Enter first name" required>
+                <mat-error *ngIf="newEmployeeForm.controls['first_name'].invalid">{{ getFirstnameErrorMes() }}</mat-error>
+            </div>
+            <div class="content">
+                <label for="last_name">Employee Last Name:</label>
+                <input type="text" name="last_name" formControlName="last_name" placeholder="Enter last name" required>
+                <mat-error *ngIf="newEmployeeForm.controls['last_name'].invalid">{{ getLastnameErrorMes() }}</mat-error>
+
+            </div>
+            <div class="content">
+                <label for="email">Employee Email:</label>
+                <input type="text" name="email" formControlName="email" placeholder="Enter email" required>
+                <mat-error *ngIf="newEmployeeForm.controls['email'].invalid">{{ getEmailErrorMes() }}</mat-error>
+
+            </div>
+            <div class="gender_selec">
+                <label for="gender">Gender:</label>
+                <mat-select formControlName="gender">
+                    <mat-option class="example-margin" value="Male">Male</mat-option>
+                    <mat-option class="example-margin" value="Female">Female</mat-option>
+                </mat-select >
+                <mat-error *ngIf="newEmployeeForm.controls['gender'].invalid">{{ getGenderErrorMes() }}</mat-error>
+
+            </div>
+            <div class="content">
+                <label for="salary">Salary:</label>
+                <input type="number" name="salary" formControlName="salary" placeholder="Enter $0.00" mask="$0.00" required>
+                <mat-error *ngIf="newEmployeeForm.controls['salary'].invalid">{{ getSalaryErrorMes() }}</mat-error>
+            </div>
+            <div class="btn">
+                <button mat-raised-button color="primary" style="margin-right: 1rem;">Send</button>
+                <button routerLink="/" mat-raised-button color="accent">Cancel</button>
+            </div>
+        </form>
+    </div>
+</mat-card>

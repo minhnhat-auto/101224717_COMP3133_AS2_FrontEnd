@@ -1,0 +1,61 @@
+mat-card{
+    margin-top: 3rem;
+}
+.header {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h1{
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    margin-top: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    /* border: red 1px solid; */
+}
+
+label{
+    margin-bottom: .5rem;
+    font-size: 15px;
+}
+
+input {
+    padding: .5rem .5rem;
+    width: 85%;
+    border: 0;
+    border-bottom: 1px solid #DCDCDC;
+    font-size: 14px;
+}
+
+.gender_selec {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    display: flex;
+    padding-left: 2rem;
+    margin-bottom: .7rem;
+}
+
+mat-radio-group {
+    width: 100%;
+    display: flex;
+}
+
+.btn{
+    margin: 1rem auto 1.5rem 4.2rem;
+    align-items: center;
+    text-align: center;
+}

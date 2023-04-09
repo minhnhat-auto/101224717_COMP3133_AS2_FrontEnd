@@ -1,0 +1,25 @@
+<mat-card>
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input type="text" matInput formControlName="username" required>
+            <mat-error *ngIf="loginForm.controls['username'].invalid">{{ getUsernameErrorMes() }}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input type="password" formControlName="password" matInput required>
+            <mat-error *ngIf="loginForm.controls['password'].invalid">{{ getPasswordErrorMes() }}</mat-error>
+        </mat-form-field>
+        <div class="btn">
+            <!-- <button mat-raise-button color="primary" (click)="submitRegister()">Submit</button> -->
+            <!-- <button mat-raised-button [disabled]="registerForm.invalid" color="primary">Submit</button> -->
+            <button mat-raised-button color="primary" style="margin-top: .6rem;">Submit</button>
+        </div>
+        <div class="under-content">
+            <p>A new user? <a routerLink="/register"> Sign up now</a></p>
+        </div>
+    </form>
+</mat-card>

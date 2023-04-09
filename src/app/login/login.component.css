@@ -1,0 +1,45 @@
+mat-card {
+    margin-top: 4rem;
+}
+
+.header{
+    margin: auto 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+mat-form-field {
+    margin-left: 3rem;
+    width: 80%;
+}
+
+button{
+    font-size: 15px;
+    width: 80%;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    margin: 0 0 2rem 3rem;
+    
+}
+
+.under-content p{
+    text-align: center;
+}
+
+.under-content p a{
+    color: blue;
+    text-decoration: none;
+
+}

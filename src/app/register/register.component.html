@@ -1,0 +1,31 @@
+<mat-card>
+    <div class="header">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account!</p>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="submitRegister()">
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input type="text" matInput formControlName="username" required>
+            <mat-error *ngIf="registerForm.controls['username'].invalid" style="margin-bottom: 2rem;">{{ getUsernameErrorMes() }}</mat-error>
+        </mat-form-field>
+        <mat-form-field >
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" required>
+            <mat-error *ngIf="registerForm.controls['email'].invalid" style="margin-bottom: 1rem;">{{ getEmailErrorMes() }}</mat-error>
+        </mat-form-field>
+        <mat-form-field> 
+            <mat-label>Password</mat-label>
+            <input type="password" formControlName="password" matInput required>
+            <mat-error *ngIf="registerForm.controls['password'].invalid" style="margin-bottom: 1rem;">{{ getPasswordErrorMes() }}</mat-error>
+        </mat-form-field>
+        <div class="btn">
+            <!-- <button mat-raise-button color="primary" (click)="submitRegister()">Submit</button> -->
+            <!-- <button mat-raised-button [disabled]="registerForm.invalid" color="primary">Submit</button> -->
+            <button mat-raised-button color="primary" style="margin-top: .8rem;">Submit</button>
+        </div>
+    </form>
+</mat-card>
+<div class="under-content">
+    <p>Already have an account? <a routerLink="/login">Login here</a></p>
+</div>

@@ -1,0 +1,30 @@
+<mat-card>
+    <div class="header">
+        <h1>View Employee Details</h1>
+    </div>
+    <div class="container" style="font-size: 16px;">
+        <div class="content">
+            <p>Employee First Name: </p>
+            <p style="font-weight: bold; margin-left: 2rem;">{{employee['first_name']}}</p>
+        </div>
+        <div class="content">
+            <p>Employee Last Name: </p>
+            <p style="font-weight: bold; margin-left: 2rem;">{{employee['last_name']}}</p>
+        </div>
+        <div class="content">
+            <p>Employee Email: </p>
+            <p style="font-weight: bold; margin-left: 4.4rem;">{{employee['email']}}</p>
+        </div>
+        <div class="content">
+            <p>Gender: </p>
+            <p style="font-weight: bold; margin-left: 8.3rem;">{{employee['gender']}}</p>
+        </div>
+        <div class="content">
+            <p>Salary: </p>
+            <p style="font-weight: bold; margin-left: 8.7rem;">{{employee['salary']}}</p>
+        </div>
+    </div>
+    <div class="btn">
+        <button routerLink="/" mat-raised-button color="accent">Back</button>
+    </div>
+</mat-card>

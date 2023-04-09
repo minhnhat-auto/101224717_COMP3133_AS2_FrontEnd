@@ -1,0 +1,38 @@
+<mat-card>
+    <div class="header">
+        <h1>Employee List</h1>
+    </div>
+    <div class="btn">
+        <button routerLink="add-employee/_add" mat-raised-button color="primary">Add Employee</button>
+    </div>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Employee First Name</th>
+                    <th scope="col">Employee Last Name</th>
+                    <th scope="col">Employee Email</th>
+                    <th scope="col">Employee Gender</th>
+                    <th scope="col" >Employee Salary</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of allEmployee">
+                    <td>{{employee.first_name}}</td>
+                    <td>{{employee.last_name}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.gender}}</td>
+                    <td>${{employee.salary}}</td>
+                    <td class="btn_action">
+                        <button mat-raised-button color="accent" (click)="editEmployee(employee.id)" style="margin-left: .2rem;">Update</button>
+                        <button mat-raised-button (click)="deleteEmployee(employee.id)" color="warn" style="margin-left: .6rem;">Delete</button>
+                        <button routerLink="view-employee/{{employee.id}}" mat-raised-button style="margin-left: .6rem;">View</button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</mat-card>

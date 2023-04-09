@@ -1,0 +1,62 @@
+.container{
+  width: 200rem;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+.header {
+  text-align: center;
+  margin-top: 1.5rem;
+  /* border: red 1px solid; */
+  height: 2rem;
+}
+
+h1{
+   font-size: 28px;
+   font-weight: 500;
+}
+.btn {
+  width: fit-content;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table,
+th,
+td {
+  width: fit-content;
+  border: grey 1px solid;
+}
+
+
+thead, tbody {
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn_action {
+  width: 100%;
+  display: flex;
+
+
+  
+}
+
+td{
+  font-weight: 400;
+  font-size: 14px;
+  width: 16rem;
+}
